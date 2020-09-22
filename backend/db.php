@@ -6,6 +6,6 @@ function pdo_connect_mysql(){
         return new PDO('mysql:host=localhost;dbname=tallerapp', $db_user, $db_pass);
     } catch ( PDOException $e ) {
         echo $e->getMessage();
-        exit('Error con conexion a la bd');
+        exit('Error con conexión a la bd');
     }
 }
